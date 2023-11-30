@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2F6862E-74DA-406B-9B6D-3CB815439F2C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AspNetMvcDocumentViewerDemo</RootNamespace>
+    <AssemblyName>AspNetMvcDocumentViewerDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Vintasoft.Imaging">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Gdi">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Annotation">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Annotation.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Annotation.Pdf">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Annotation.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Annotation.Pdf">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Annotation.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Annotation.Web.Api2Controllers">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Annotation.Web.Api2Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Annotation.Web.Services">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Annotation.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Jbig2Codec">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Jbig2Codec.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Jpeg2000Codec">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Jpeg2000Codec.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Office.OpenXml">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Office.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Pdf">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Pdf.Resources">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Pdf.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Web.Api2Controllers">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Web.Api2Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Imaging.Web.Services">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Imaging.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Shared">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Vintasoft.Shared.Web">
+      <HintPath>..\..\..\..\Bin\DotNet4\AnyCPU\Vintasoft.Shared.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.7" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="6.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\API\Annotations\CustomAnnotations\AnnotationsMath.cs" />
+    <Compile Include="Controllers\API\Annotations\CustomAnnotations\CustomAnnotationJsonFormatter.cs" />
+    <Compile Include="Controllers\API\Annotations\CustomAnnotations\CustomAnnotationSerializationBinder.cs" />
+    <Compile Include="Controllers\API\Annotations\CustomAnnotations\MarkAnnotation\MarkAnnotationData.cs" />
+    <Compile Include="Controllers\API\Annotations\CustomAnnotations\MarkAnnotation\MarkAnnotationRenderer.cs" />
+    <Compile Include="Controllers\API\Annotations\CustomAnnotations\MarkAnnotation\MarkAnnotationType.cs" />
+    <Compile Include="Controllers\API\Annotations\CustomAnnotations\TriangleAnnotation\TriangleAnnotationData.cs" />
+    <Compile Include="Controllers\API\Annotations\MyVintasoftAnnotationCollectionApiController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\API\DocumentPasswordManager.cs" />
+    <Compile Include="Controllers\API\File\MyVintasoftAnnotatedFileApiController.cs" />
+    <Compile Include="Controllers\API\File\UploadedFilesListResponseParams.cs" />
+    <Compile Include="Controllers\API\ImageCollection\MyVintasoftImageCollectionApiController.cs" />
+    <Compile Include="Controllers\API\ImageRendering\MyVintasoftImageApiController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MySessionIDManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\Cursors\CloseHand.cur" />
+    <Content Include="Content\Cursors\Magnifier.cur" />
+    <Content Include="Content\Cursors\Rotate.cur" />
+    <Content Include="Content\Cursors\Zoom.cur" />
+    <Content Include="Content\Demo.css" />
+    <Content Include="Content\DocumentViewerDemo.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\fileUploadProgress.gif" />
+    <Content Include="Images\VintaSoftLogo.png" />
+    <Content Include="Scripts\AnnotationUiHelper.js" />
+    <Content Include="Scripts\SerializeAnnotationsAndDownloadFileHelper.js" />
+    <Content Include="Scripts\External\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\External\jquery-ui-css\images\ui-icons_444444_256x240.png" />
+    <Content Include="Scripts\External\jquery-ui-css\images\ui-icons_555555_256x240.png" />
+    <Content Include="Scripts\External\jquery-ui-css\images\ui-icons_777777_256x240.png" />
+    <Content Include="Scripts\External\jquery-ui-css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\External\jquery-ui-css\jquery-ui.min.css" />
+    <Content Include="Scripts\External\jquery-ui.min.js" />
+    <Content Include="Scripts\External\jquery.blockUI.js" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\128\bar-alpha.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\128\bar.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\128\map.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\bar-alpha.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\bar-opacity.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\bar-pointer.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\bar.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\map-opacity.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\map-pointer.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\map.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\images\preview-opacity.png" />
+    <Content Include="Scripts\External\jquery.colorpicker\jquery.colorpicker.css" />
+    <Content Include="Scripts\External\jquery.colorpicker\jquery.colorpicker.js" />
+    <Content Include="Scripts\External\multiple-select\multiple-select.css" />
+    <Content Include="Scripts\External\multiple-select\multiple-select.js" />
+    <Content Include="Scripts\External\multiple-select\multiple-select.png" />
+    <Content Include="Scripts\DocumentViewerDemo.js" />
+    <Content Include="Scripts\OpenFileHelper.js" />
+    <Content Include="Scripts\UI\Dialogs\annotationSettingsDialog.js" />
+    <Content Include="Scripts\UI\Dialogs\blockUiDialog.js" />
+    <Content Include="Scripts\UI\Dialogs\previouslyUploadedFilesDialog.js" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.Annotation.js" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.css" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.Dialogs.jQueryUI.js" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.DocumentViewer.Dialogs.jQueryUI.js" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.DocumentViewer.js" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.js" />
+    <Content Include="Scripts\WebUriActionExecutor.js" />
+    <Content Include="Scripts\UI\Dialogs\errorMessageDialog.js" />
+    <Content Include="Scripts\UI\Dialogs\propertyGridDialog.js" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.DocumentViewer.css" />
+    <Content Include="Scripts\Vintasoft\Vintasoft.Shared.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Shared\_DemoViewLayout.cshtml" />
+    <Content Include="Views\Shared\UI\Dialogs\errorMessageDialog.cshtml" />
+    <Content Include="UploadedImageFiles\VintasoftImagingDemo.pdf" />
+    <Content Include="Resources\DefaultCMYK.icc" />
+    <Content Include="Resources\DefaultRGB.icc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="VintasoftCache\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62204</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52304/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
